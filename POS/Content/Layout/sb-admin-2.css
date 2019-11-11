@@ -3971,23 +3971,26 @@ input[type="button"].btn-block {
 
 .navbar-brand {
   display: inline-block;
-  padding-top: 0.3125rem;
-  padding-bottom: 0.3125rem;
+  padding-top: 0.4125rem;
+  padding-bottom: 0.3725rem;
   margin-right: 1rem;
-  font-size: 1.25rem;
+    margin-left: 2.6rem;
+  font-size: 1.7rem;
   line-height: inherit;
   white-space: nowrap;
+    color: white;
 }
 
-.navbar-brand:hover, .navbar-brand:focus {
-  text-decoration: none;
-}
+    .navbar-brand:hover, .navbar-brand:focus {
+        text-decoration: none;
+        color: #b7b9cc;
+    }
 
 .navbar-nav {
   display: flex;
   flex-direction: column;
   padding-left: 0;
-  margin-bottom: 0;
+  /*margin-top: auto;*/
   list-style: none;
 }
 
@@ -9935,7 +9938,7 @@ a:focus {
 }
 
 .topbar {
-  height: 4.375rem;
+    height: 3.375rem;
 }
 
 .topbar #sidebarToggleTop {
@@ -10231,9 +10234,10 @@ a:focus {
 }
 
 @media (min-width: 768px) {
-  .sidebar {
-    width: 14rem !important;
-  }
+    .sidebar {
+        width: 14rem !important;
+        margin-bottom: 0;
+    }
   .sidebar .nav-item .collapse {
     position: relative;
     left: 0;
@@ -10995,4 +10999,8 @@ footer.sticky-footer .copyright {
 
 body.sidebar-toggled footer.sticky-footer {
   width: 100%;
+}
+
+.maga {
+    margin-bottom: -30px;
 }

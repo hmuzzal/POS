@@ -177,6 +177,11 @@
     <Compile Include="Identity\AccountViewModels.cs" />
     <Compile Include="Identity\IdentityModels.cs" />
     <Compile Include="Identity\ManageViewModels.cs" />
+    <Compile Include="Migrations\201911111503338_initial.cs" />
+    <Compile Include="Migrations\201911111503338_initial.Designer.cs">
+      <DependentUpon>201911111503338_initial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
@@ -190,7 +195,11 @@
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
     <Content Include="Content\Layout\all.css" />
+    <Content Include="Content\Layout\fontawesome.min.css" />
+    <Content Include="Content\Layout\jquery.easing.min.js" />
+    <Content Include="Content\Layout\jquery.js" />
     <Content Include="Content\Layout\sb-admin-2.css" />
+    <Content Include="Content\Layout\sb-admin-2.min.js" />
     <Content Include="Content\Layout\sb-admin.js" />
     <Content Include="favicon.ico" />
     <Content Include="fonts\glyphicons-halflings-regular.svg" />
@@ -264,6 +273,11 @@
     <None Include="packages.config" />
     <Content Include="Scripts\jquery-3.3.1.slim.min.map" />
     <Content Include="Scripts\jquery-3.3.1.min.map" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\201911111503338_initial.resx">
+      <DependentUpon>201911111503338_initial.cs</DependentUpon>
+    </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
