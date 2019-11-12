@@ -11004,3 +11004,8 @@ body.sidebar-toggled footer.sticky-footer {
 .maga {
     margin-bottom: -30px;
 }
+
+
+.userIdentity a:hover {
+    text-decoration: none;
+}

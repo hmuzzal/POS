@@ -1,33 +1,22 @@
 ﻿@using Microsoft.AspNet.Identity
-
-
-
-
-
-
-
-@using Microsoft.AspNet.Identity
 @if (Request.IsAuthenticated)
 {
     using (Html.BeginForm("LogOff", "Account", FormMethod.Post, new { id = "logoutForm"}))
     {
         @Html.AntiForgeryToken()
-        <li class="maga nav-item dropdown no-arrow">
-            <a class="" href="#" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+        <li class="nav-item dropdown no-arrow userIdentity maga">
+            <a href="#" class="" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <span class="mr-2 d-none d-lg-inline text-gray-600 small"> @User.Identity.GetUserName()</span>
 
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small"> @Html.ActionLink(User.Identity.GetUserName(), "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Manage" })</span>
-           
-
+                <img class="img-profile rounded-circle userDropdown" src="https://source.unsplash.com/QAB-WJcbgJk/30x30">
             </a>
             <!-- Dropdown - User Information -->
-            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in" aria-labelledby="userDropdown">
-                <a class="dropdown-item" href="#">
-                    <i class="fas fa-user fa-sm fa-fw mr-2 text-gray-400"></i>
-                    @Html.ActionLink("Hello " + User.Identity.GetUserName() + "!", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Profile" })
-                </a>
-            
+            <div class="dropdown-menu dropdown-menu-right shadow animated--grow-in userDropdownOpen" aria-labelledby="userDropdown">
+             
+                    @Html.ActionLink("Profile", "Index", "Manage", routeValues: null, htmlAttributes: new { title = "Profile",@class="dropdown-item"  })
+           
                 <div class="dropdown-divider"></div>
-                <a class="dropdown-item" href="javascript:document.getElementById('logoutForm').submit()"><i class="fas fa-sign-out-alt fa-sm fa-fw mr-2 text-gray-400"></i>Log off</a>
+                <a class="dropdown-item" href="javascript:document.getElementById('logoutForm').submit()">Log off</a>
             </div>
         </li>
     }
@@ -37,7 +26,15 @@
 else
 {
     <ul class="nav navbar-nav navbar-right">
-        <li>@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+        <li style="padding-right: 10px">@Html.ActionLink("Register", "Register", "Account", routeValues: null, htmlAttributes: new { id = "registerLink" })</li>
+
         <li>@Html.ActionLink("Log in", "Login", "Account", routeValues: null, htmlAttributes: new { id = "loginLink" })</li>
     </ul>
 }
+
+
+<script>
+    $('.userDropdown').click(function() {
+        $('.userDropdownOpen').toggle();
+    });
+</script>
