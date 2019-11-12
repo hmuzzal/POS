@@ -161,6 +161,9 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\Products\Controllers\ProductBrandsController.cs" />
+    <Compile Include="Areas\Products\Controllers\ProductCategoriesController.cs" />
+    <Compile Include="Areas\Products\Controllers\ProductsController.cs" />
     <Compile Include="Areas\Products\Models\Product.cs" />
     <Compile Include="Areas\Products\Models\ProductBrand.cs" />
     <Compile Include="Areas\Products\Models\ProductCategory.cs" />
@@ -175,19 +178,23 @@
     <Compile Include="DAL\DbContext\ApplicationDbContext.cs" />
     <Compile Include="Identity\IdentityModels.cs" />
     <Compile Include="Identity\ManageViewModels.cs" />
-    <Compile Include="Migrations\201911120515284_initial.cs" />
-    <Compile Include="Migrations\201911120515284_initial.Designer.cs">
-      <DependentUpon>201911120515284_initial.cs</DependentUpon>
+    <Compile Include="Migrations\201911121403303_unknown.cs" />
+    <Compile Include="Migrations\201911121403303_unknown.Designer.cs">
+      <DependentUpon>201911121403303_unknown.cs</DependentUpon>
     </Compile>
-    <Compile Include="Migrations\201911121033547_productAndrelatedModelAdded.cs" />
-    <Compile Include="Migrations\201911121033547_productAndrelatedModelAdded.Designer.cs">
-      <DependentUpon>201911121033547_productAndrelatedModelAdded.cs</DependentUpon>
+    <Compile Include="Migrations\201911121413573_RelationAmongProductCategoriesBrands.cs" />
+    <Compile Include="Migrations\201911121413573_RelationAmongProductCategoriesBrands.Designer.cs">
+      <DependentUpon>201911121413573_RelationAmongProductCategoriesBrands.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="App_Data\aspnet-POS-20191107120020.mdf" />
+    <Content Include="App_Data\aspnet-POS-20191107120020_log.ldf">
+      <DependentUpon>aspnet-POS-20191107120020.mdf</DependentUpon>
+    </Content>
     <Content Include="Content\bootstrap-theme.css" />
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
@@ -214,6 +221,22 @@
     <Content Include="Content\bootstrap.css.map" />
     <Content Include="Content\bootstrap-theme.min.css.map" />
     <Content Include="Content\bootstrap-theme.css.map" />
+    <Content Include="Areas\Products\Views\ProductCategories\Create.cshtml" />
+    <Content Include="Areas\Products\Views\ProductCategories\Delete.cshtml" />
+    <Content Include="Areas\Products\Views\ProductCategories\Details.cshtml" />
+    <Content Include="Areas\Products\Views\ProductCategories\Edit.cshtml" />
+    <Content Include="Areas\Products\Views\ProductCategories\Index.cshtml" />
+    <Content Include="Areas\Products\Views\ProductBrands\Create.cshtml" />
+    <Content Include="Areas\Products\Views\ProductBrands\Delete.cshtml" />
+    <Content Include="Areas\Products\Views\ProductBrands\Details.cshtml" />
+    <Content Include="Areas\Products\Views\ProductBrands\Edit.cshtml" />
+    <Content Include="Areas\Products\Views\ProductBrands\Index.cshtml" />
+    <Content Include="Areas\Products\Views\Products\Create.cshtml" />
+    <Content Include="Areas\Products\Views\Products\Delete.cshtml" />
+    <Content Include="Areas\Products\Views\Products\Details.cshtml" />
+    <Content Include="Areas\Products\Views\Products\Edit.cshtml" />
+    <Content Include="Areas\Products\Views\Products\Index.cshtml" />
+    <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
@@ -264,8 +287,6 @@
     <Content Include="Views\Shared\_sidebar.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="App_Data\" />
-    <Folder Include="Areas\Products\Controllers\" />
     <Folder Include="Areas\Products\Views\Shared\" />
     <Folder Include="Content\CSS\" />
   </ItemGroup>
@@ -275,11 +296,11 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201911120515284_initial.resx">
-      <DependentUpon>201911120515284_initial.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201911121403303_unknown.resx">
+      <DependentUpon>201911121403303_unknown.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201911121033547_productAndrelatedModelAdded.resx">
-      <DependentUpon>201911121033547_productAndrelatedModelAdded.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201911121413573_RelationAmongProductCategoriesBrands.resx">
+      <DependentUpon>201911121413573_RelationAmongProductCategoriesBrands.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

@@ -1,7 +1,6 @@
-﻿using System;
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using System.ComponentModel.DataAnnotations;
-using System.Linq;
+using System.ComponentModel.DataAnnotations.Schema;
 using System.Web;
 
 namespace POS.Areas.Products.Models
@@ -10,9 +9,14 @@ namespace POS.Areas.Products.Models
     {
         public int Id { get; set; }
         public string Code { get; set; }
-        public ProductCategory Category { get; set; }
-        public ProductBrand Brand { get; set; }
+        [Display(Name = "Category")]
+        public int CategoryId { get; set; }
+        public List<ProductCategory> Categories { get; set; }
+        [Display(Name = "Brand")]
+        public int BrandId { get; set; }
+        public List<ProductBrand> Brands { get; set; }
         public string Name { get; set; }
+        [NotMapped]
         public HttpPostedFileBase Image { get; set; }
 
     }
