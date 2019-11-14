@@ -16,6 +16,7 @@ namespace POS.Areas.Products.Models
         public int BrandId { get; set; }
         public List<ProductBrand> Brands { get; set; }
         public string Name { get; set; }
+        public long Price { get; set; }
         public int Stock { get; set; }
         [NotMapped]
         public HttpPostedFileBase Image { get; set; }

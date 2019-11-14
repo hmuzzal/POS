@@ -187,6 +187,10 @@
     <Compile Include="Migrations\201911140619476_stockAdded.Designer.cs">
       <DependentUpon>201911140619476_stockAdded.cs</DependentUpon>
     </Compile>
+    <Compile Include="Migrations\201911141042455_PriceAdded.cs" />
+    <Compile Include="Migrations\201911141042455_PriceAdded.Designer.cs">
+      <DependentUpon>201911141042455_PriceAdded.cs</DependentUpon>
+    </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Startup.cs" />
@@ -200,6 +204,8 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Chart.css" />
+    <Content Include="Content\Chart.min.css" />
     <Content Include="Content\Layout\all.css" />
     <Content Include="Content\Layout\bootstrap.bundle.min.js" />
     <Content Include="Content\Layout\fontawesome.min.css" />
@@ -245,6 +251,8 @@
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Chart.js" />
+    <Content Include="Scripts\Chart.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -305,6 +313,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Migrations\201911140619476_stockAdded.resx">
       <DependentUpon>201911140619476_stockAdded.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911141042455_PriceAdded.resx">
+      <DependentUpon>201911141042455_PriceAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

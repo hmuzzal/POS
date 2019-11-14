@@ -68,7 +68,7 @@ namespace POS.Areas.Products.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "Id,Code,CategoryId,BrandId,Name")] Product product)
+        public async Task<ActionResult> Create([Bind(Include = "Id,Code,CategoryId,BrandId,Name,Price")] Product product)
         {
             if (ModelState.IsValid)
             {
@@ -100,7 +100,7 @@ namespace POS.Areas.Products.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Edit([Bind(Include = "Id,Code,CategoryId,BrandId,Name")] Product product)
+        public async Task<ActionResult> Edit([Bind(Include = "Id,Code,CategoryId,BrandId,Name,Price")] Product product)
         {
             if (ModelState.IsValid)
             {

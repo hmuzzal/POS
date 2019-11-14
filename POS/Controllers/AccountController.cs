@@ -1,4 +1,6 @@
 ﻿using System;
+using System.Collections.Generic;
+using System.Data;
 using System.Globalization;
 using System.Linq;
 using System.Security.Claims;
@@ -68,6 +70,8 @@ namespace POS.Controllers
         [ValidateAntiForgeryToken]
         public async Task<ActionResult> Login(LoginViewModel model, string returnUrl)
         {
+            //string username = User.Identity.Name;
+
             if (!ModelState.IsValid)
             {
                 return View(model);
