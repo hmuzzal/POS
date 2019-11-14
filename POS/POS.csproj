@@ -164,6 +164,7 @@
     <Compile Include="Areas\Products\Controllers\ProductBrandsController.cs" />
     <Compile Include="Areas\Products\Controllers\ProductCategoriesController.cs" />
     <Compile Include="Areas\Products\Controllers\ProductsController.cs" />
+    <Compile Include="Areas\Products\Controllers\ProductStockController.cs" />
     <Compile Include="Areas\Products\Models\Product.cs" />
     <Compile Include="Areas\Products\Models\ProductBrand.cs" />
     <Compile Include="Areas\Products\Models\ProductCategory.cs" />
@@ -181,6 +182,10 @@
     <Compile Include="Migrations\201911140426407_unknown.cs" />
     <Compile Include="Migrations\201911140426407_unknown.Designer.cs">
       <DependentUpon>201911140426407_unknown.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\201911140619476_stockAdded.cs" />
+    <Compile Include="Migrations\201911140619476_stockAdded.Designer.cs">
+      <DependentUpon>201911140619476_stockAdded.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -232,6 +237,10 @@
     <Content Include="Areas\Products\Views\Products\Details.cshtml" />
     <Content Include="Areas\Products\Views\Products\Edit.cshtml" />
     <Content Include="Areas\Products\Views\Products\Index.cshtml" />
+    <Content Include="Areas\Products\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Products\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Products\Views\ProductStock\Index.cshtml" />
+    <Content Include="Areas\Products\Views\ProductStock\AddStock.cshtml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -283,7 +292,6 @@
     <Content Include="Views\Shared\_sidebar.cshtml" />
   </ItemGroup>
   <ItemGroup>
-    <Folder Include="Areas\Products\Views\Shared\" />
     <Folder Include="Content\CSS\" />
   </ItemGroup>
   <ItemGroup>
@@ -294,6 +302,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201911140426407_unknown.resx">
       <DependentUpon>201911140426407_unknown.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911140619476_stockAdded.resx">
+      <DependentUpon>201911140619476_stockAdded.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>
