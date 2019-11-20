@@ -161,9 +161,21 @@
     <Compile Include="App_Start\IdentityConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="App_Start\Startup.Auth.cs" />
+    <Compile Include="Areas\Address\AddressAreaRegistration.cs" />
+    <Compile Include="Areas\Address\Controllers\AddressesController.cs" />
+    <Compile Include="Areas\Address\Controllers\CountriesController.cs" />
+    <Compile Include="Areas\Address\Controllers\DistrictsController.cs" />
+    <Compile Include="Areas\Address\Controllers\DivisionsController.cs" />
+    <Compile Include="Areas\Address\Controllers\PoliceStationsController.cs" />
+    <Compile Include="Areas\Address\Models\Address.cs" />
+    <Compile Include="Areas\Address\Models\Country.cs" />
+    <Compile Include="Areas\Address\Models\District.cs" />
+    <Compile Include="Areas\Address\Models\Division.cs" />
+    <Compile Include="Areas\Address\Models\PoliceStation.cs" />
     <Compile Include="Areas\Products\Controllers\ProductBrandsController.cs" />
     <Compile Include="Areas\Products\Controllers\ProductCategoriesController.cs" />
     <Compile Include="Areas\Products\Controllers\ProductsController.cs" />
+    <Compile Include="Areas\Products\Controllers\ProductStockController.cs" />
     <Compile Include="Areas\Products\Models\Product.cs" />
     <Compile Include="Areas\Products\Models\ProductBrand.cs" />
     <Compile Include="Areas\Products\Models\ProductCategory.cs" />
@@ -178,13 +190,9 @@
     <Compile Include="DAL\DbContext\ApplicationDbContext.cs" />
     <Compile Include="Identity\IdentityModels.cs" />
     <Compile Include="Identity\ManageViewModels.cs" />
-    <Compile Include="Migrations\201911121403303_unknown.cs" />
-    <Compile Include="Migrations\201911121403303_unknown.Designer.cs">
-      <DependentUpon>201911121403303_unknown.cs</DependentUpon>
-    </Compile>
-    <Compile Include="Migrations\201911121413573_RelationAmongProductCategoriesBrands.cs" />
-    <Compile Include="Migrations\201911121413573_RelationAmongProductCategoriesBrands.Designer.cs">
-      <DependentUpon>201911121413573_RelationAmongProductCategoriesBrands.cs</DependentUpon>
+    <Compile Include="Migrations\201911201451137_allClassesModified.cs" />
+    <Compile Include="Migrations\201911201451137_allClassesModified.Designer.cs">
+      <DependentUpon>201911201451137_allClassesModified.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -236,6 +244,34 @@
     <Content Include="Areas\Products\Views\Products\Details.cshtml" />
     <Content Include="Areas\Products\Views\Products\Edit.cshtml" />
     <Content Include="Areas\Products\Views\Products\Index.cshtml" />
+    <Content Include="Areas\Products\Views\ProductStock\Index.cshtml" />
+    <Content Include="Areas\Products\Views\ProductStock\Stock.cshtml" />
+    <Content Include="Areas\Address\Views\web.config" />
+    <Content Include="Areas\Address\Views\Addresses\Create.cshtml" />
+    <Content Include="Areas\Address\Views\Addresses\Delete.cshtml" />
+    <Content Include="Areas\Address\Views\Addresses\Details.cshtml" />
+    <Content Include="Areas\Address\Views\Addresses\Edit.cshtml" />
+    <Content Include="Areas\Address\Views\Addresses\Index.cshtml" />
+    <Content Include="Areas\Address\Views\Countries\Create.cshtml" />
+    <Content Include="Areas\Address\Views\Countries\Delete.cshtml" />
+    <Content Include="Areas\Address\Views\Countries\Details.cshtml" />
+    <Content Include="Areas\Address\Views\Countries\Edit.cshtml" />
+    <Content Include="Areas\Address\Views\Countries\Index.cshtml" />
+    <Content Include="Areas\Address\Views\PoliceStations\Create.cshtml" />
+    <Content Include="Areas\Address\Views\PoliceStations\Delete.cshtml" />
+    <Content Include="Areas\Address\Views\PoliceStations\Details.cshtml" />
+    <Content Include="Areas\Address\Views\PoliceStations\Edit.cshtml" />
+    <Content Include="Areas\Address\Views\PoliceStations\Index.cshtml" />
+    <Content Include="Areas\Address\Views\Districts\Create.cshtml" />
+    <Content Include="Areas\Address\Views\Districts\Delete.cshtml" />
+    <Content Include="Areas\Address\Views\Districts\Details.cshtml" />
+    <Content Include="Areas\Address\Views\Districts\Edit.cshtml" />
+    <Content Include="Areas\Address\Views\Districts\Index.cshtml" />
+    <Content Include="Areas\Address\Views\Divisions\Create.cshtml" />
+    <Content Include="Areas\Address\Views\Divisions\Delete.cshtml" />
+    <Content Include="Areas\Address\Views\Divisions\Details.cshtml" />
+    <Content Include="Areas\Address\Views\Divisions\Edit.cshtml" />
+    <Content Include="Areas\Address\Views\Divisions\Index.cshtml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
@@ -287,6 +323,7 @@
     <Content Include="Views\Shared\_sidebar.cshtml" />
   </ItemGroup>
   <ItemGroup>
+    <Folder Include="Areas\Address\Views\Shared\" />
     <Folder Include="Areas\Products\Views\Shared\" />
     <Folder Include="Content\CSS\" />
   </ItemGroup>
@@ -296,11 +333,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201911121403303_unknown.resx">
-      <DependentUpon>201911121403303_unknown.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201911121413573_RelationAmongProductCategoriesBrands.resx">
-      <DependentUpon>201911121413573_RelationAmongProductCategoriesBrands.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201911201451137_allClassesModified.resx">
+      <DependentUpon>201911201451137_allClassesModified.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

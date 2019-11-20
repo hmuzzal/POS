@@ -393,6 +393,8 @@ namespace POS.Controllers
         public ActionResult LogOff()
         {
             AuthenticationManager.SignOut(DefaultAuthenticationTypes.ApplicationCookie);
+            Response.Cookies["ASPXPIKESADMINAUTH"].Expires = DateTime.Now.AddDays(-1);
+            Response.Cookies["ASP.NET_SessionId"].Expires = DateTime.Now.AddDays(-1);
             return RedirectToAction("Index", "Home");
         }
 

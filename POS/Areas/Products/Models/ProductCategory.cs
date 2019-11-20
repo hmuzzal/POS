@@ -9,5 +9,6 @@ namespace POS.Areas.Products.Models
     {
         public int Id { get; set; }
         public string Category { get; set; }
+        public List<Product> Products { get; set; }
     }
 }

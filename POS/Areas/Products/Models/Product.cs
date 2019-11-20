@@ -11,11 +11,12 @@ namespace POS.Areas.Products.Models
         public string Code { get; set; }
         [Display(Name = "Category")]
         public int CategoryId { get; set; }
-        public List<ProductCategory> Categories { get; set; }
+        public ProductCategory PrdouctCategory { get; set; }
         [Display(Name = "Brand")]
         public int BrandId { get; set; }
-        public List<ProductBrand> Brands { get; set; }
+        public ProductBrand ProductBrand { get; set; }
         public string Name { get; set; }
+        public int Stock { get; set; }
         [NotMapped]
         public HttpPostedFileBase Image { get; set; }
 

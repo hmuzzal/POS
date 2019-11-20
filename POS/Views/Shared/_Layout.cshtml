@@ -13,14 +13,13 @@
 </head>
 
 <body id="page-top">
-<div id="wrapper">
+    <div id="wrapper">
         <ul class="navbar-nav bg-gradient-primary sidebar sidebar-dark accordion" id="accordionSidebar">
             <div class="sidebar-brand-icon">@Html.ActionLink("POS", "Index", "Home", new { area = "" }, new { @class = "navbar-brand" })</div>
             <hr class="sidebar-divider my-0">
             @Html.Partial("_sidebar")
         </ul>
-     
-        <div id="content-wrapper" class="d-flex flex-column">  
+        <div id="content-wrapper" class="d-flex flex-column">
             <div id="content">
                 <nav class="navbar navbar-expand navbar-light bg-white topbar mb-4 static-top shadow">
                     <button id="sidebarToggle"><span><img src="https://img.icons8.com/ios-glyphs/15/000000/list.png"></span></button>
@@ -28,12 +27,12 @@
                         @Html.Partial("_LoginPartial")
                     </ul>
                 </nav>
-        
+
                 <div class="container-fluid">
                     @RenderBody()
-                </div>       
+                </div>
             </div>
-           
+
             <footer class="sticky-footer bg-white">
                 <div class="container my-auto">
                     <div class="copyright text-center my-auto">
@@ -41,25 +40,28 @@
                     </div>
                 </div>
             </footer>
-        </div>    
+        </div>
     </div>
 
+    <!-- Core plugin JavaScript-->
+    @Scripts.Render("~/bundles/jquery")
+    <script src="~/Content/Layout/jquery.easing.min.js"></script>
     <!-- Bootstrap core JavaScript-->
     <script src="~/Content/Layout/jquery.min.js"></script>
     <script src="~/Content/Layout/bootstrap.bundle.min.js"></script>
-    <!-- Core plugin JavaScript-->
-    <script src="~/Content/Layout/jquery.easing.min.js"></script>
-
     <!-- Custom scripts for all pages-->
     <script src="~/Content/Layout/sb-admin-2.min.js"></script>
-
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+    <script>
+        $('.userDropdown').click(function () {
+            $('.userDropdownOpen').toggle();
+        });
+    </script>
 </body>
-
 </html>
 
-@Scripts.Render("~/bundles/jquery")
-@Scripts.Render("~/bundles/bootstrap")
-@RenderSection("scripts", required: false)
+
 
 
 
