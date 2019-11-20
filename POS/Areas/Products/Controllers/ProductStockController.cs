@@ -8,6 +8,7 @@ using System.Web.Mvc;
 
 namespace POS.Areas.Products.Controllers
 {
+    [Authorize]
     public class ProductStockController : Controller
     {
         private ApplicationDbContext db = new ApplicationDbContext();
