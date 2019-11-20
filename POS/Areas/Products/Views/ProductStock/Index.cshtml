@@ -10,6 +10,7 @@
 <p>
    Search Bar
 </p>
+<h2>Product Stock</h2>
 <table class="table">
     <tr>
         <th>
@@ -45,12 +46,19 @@
                 @Html.DisplayFor(modelItem => item.Name)
             </td>
             <td>
+
                 @Html.DisplayFor(modelItem => item.Stock)
             </td>
             <td>
                 @Html.ActionLink("Stock", "Stock", new { id=item.Id })
+
+                @Html.DisplayFor(modelItem => item.Stock) pc
+            </td>
+            <td>
+                @Html.ActionLink("Stock", "AddStock", new { id=item.Id })
             </td>
         </tr>
     }
-
 </table>
+
+

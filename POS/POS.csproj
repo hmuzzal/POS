@@ -190,9 +190,9 @@
     <Compile Include="DAL\DbContext\ApplicationDbContext.cs" />
     <Compile Include="Identity\IdentityModels.cs" />
     <Compile Include="Identity\ManageViewModels.cs" />
-    <Compile Include="Migrations\201911201451137_allClassesModified.cs" />
-    <Compile Include="Migrations\201911201451137_allClassesModified.Designer.cs">
-      <DependentUpon>201911201451137_allClassesModified.cs</DependentUpon>
+    <Compile Include="Migrations\201911201927430_unknown.cs" />
+    <Compile Include="Migrations\201911201927430_unknown.Designer.cs">
+      <DependentUpon>201911201927430_unknown.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -207,6 +207,8 @@
     <Content Include="Content\bootstrap-theme.min.css" />
     <Content Include="Content\bootstrap.css" />
     <Content Include="Content\bootstrap.min.css" />
+    <Content Include="Content\Chart.css" />
+    <Content Include="Content\Chart.min.css" />
     <Content Include="Content\Layout\all.css" />
     <Content Include="Content\Layout\bootstrap.bundle.min.js" />
     <Content Include="Content\Layout\fontawesome.min.css" />
@@ -272,10 +274,16 @@
     <Content Include="Areas\Address\Views\Divisions\Details.cshtml" />
     <Content Include="Areas\Address\Views\Divisions\Edit.cshtml" />
     <Content Include="Areas\Address\Views\Divisions\Index.cshtml" />
+    <Content Include="Areas\Products\Views\_ViewStart.cshtml" />
+    <Content Include="Areas\Products\Views\Shared\_Layout.cshtml" />
+    <Content Include="Areas\Products\Views\ProductStock\Index.cshtml" />
+    <Content Include="Areas\Products\Views\ProductStock\AddStock.cshtml" />
     <None Include="Properties\PublishProfiles\FolderProfile.pubxml" />
     <None Include="Scripts\jquery-3.3.1.intellisense.js" />
     <Content Include="Scripts\bootstrap.js" />
     <Content Include="Scripts\bootstrap.min.js" />
+    <Content Include="Scripts\Chart.js" />
+    <Content Include="Scripts\Chart.min.js" />
     <Content Include="Scripts\jquery-3.3.1.js" />
     <Content Include="Scripts\jquery-3.3.1.min.js" />
     <Content Include="Scripts\jquery-3.3.1.slim.js" />
@@ -324,7 +332,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="Areas\Address\Views\Shared\" />
-    <Folder Include="Areas\Products\Views\Shared\" />
     <Folder Include="Content\CSS\" />
   </ItemGroup>
   <ItemGroup>
@@ -335,6 +342,9 @@
   <ItemGroup>
     <EmbeddedResource Include="Migrations\201911201451137_allClassesModified.resx">
       <DependentUpon>201911201451137_allClassesModified.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Migrations\201911201927430_unknown.resx">
+      <DependentUpon>201911201927430_unknown.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

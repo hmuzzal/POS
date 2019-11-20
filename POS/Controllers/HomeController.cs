@@ -6,6 +6,7 @@ using System.Web.Mvc;
 
 namespace POS.Controllers
 {
+    [Authorize]
     public class HomeController : Controller
     {
         public ActionResult Index()
@@ -26,5 +27,6 @@ namespace POS.Controllers
 
             return View();
         }
+
     }
 }
