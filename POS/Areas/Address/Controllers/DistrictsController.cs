@@ -45,7 +45,7 @@ namespace POS.Areas.Address.Controllers
         // more details see https://go.microsoft.com/fwlink/?LinkId=317598.
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<ActionResult> Create([Bind(Include = "Id,Name,AddressId")] District district)
+        public async Task<ActionResult> Create([Bind(Include = "Id,Name,CountryId,DivisionId")] District district)
         {
             if (ModelState.IsValid)
             {

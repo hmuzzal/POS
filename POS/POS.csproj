@@ -172,6 +172,7 @@
     <Compile Include="Areas\Address\Models\District.cs" />
     <Compile Include="Areas\Address\Models\Division.cs" />
     <Compile Include="Areas\Address\Models\PoliceStation.cs" />
+    <Compile Include="Areas\Address\Models\Village.cs" />
     <Compile Include="Areas\Products\Controllers\ProductBrandsController.cs" />
     <Compile Include="Areas\Products\Controllers\ProductCategoriesController.cs" />
     <Compile Include="Areas\Products\Controllers\ProductsController.cs" />
@@ -190,9 +191,9 @@
     <Compile Include="DAL\DbContext\ApplicationDbContext.cs" />
     <Compile Include="Identity\IdentityModels.cs" />
     <Compile Include="Identity\ManageViewModels.cs" />
-    <Compile Include="Migrations\201911201927430_unknown.cs" />
-    <Compile Include="Migrations\201911201927430_unknown.Designer.cs">
-      <DependentUpon>201911201927430_unknown.cs</DependentUpon>
+    <Compile Include="Migrations\201911261507356_initial.cs" />
+    <Compile Include="Migrations\201911261507356_initial.Designer.cs">
+      <DependentUpon>201911261507356_initial.cs</DependentUpon>
     </Compile>
     <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -340,11 +341,8 @@
     <Content Include="Scripts\jquery-3.3.1.min.map" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Migrations\201911201451137_allClassesModified.resx">
-      <DependentUpon>201911201451137_allClassesModified.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Migrations\201911201927430_unknown.resx">
-      <DependentUpon>201911201927430_unknown.cs</DependentUpon>
+    <EmbeddedResource Include="Migrations\201911261507356_initial.resx">
+      <DependentUpon>201911261507356_initial.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <PropertyGroup>

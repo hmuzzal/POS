@@ -11,7 +11,7 @@ namespace POS.Areas.Products.Models
         public string Code { get; set; }
         [Display(Name = "Category")]
         public int CategoryId { get; set; }
-        public ProductCategory PrdouctCategory { get; set; }
+        public ProductCategory ProductCategory { get; set; }
         [Display(Name = "Brand")]
         public int BrandId { get; set; }
         public ProductBrand ProductBrand { get; set; }

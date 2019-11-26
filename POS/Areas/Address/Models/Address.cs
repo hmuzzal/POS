@@ -15,6 +15,7 @@ namespace POS.Areas.Address.Models
         [Display(Name ="Police Station")]
         public int PsId { get; set; }
         public PoliceStation PoliceStation { get; set; }
+        public Village Village { get; set; }
 
     }
 }
