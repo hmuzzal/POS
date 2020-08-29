@@ -6256,6 +6256,10 @@ button.bg-warning:focus {
   background-color: #f4b30d !important;
 }
 
+/*body {
+    padding-bottom: 20px;
+}*/
+
 .bg-danger {
   background-color: #e74a3b !important;
 }
@@ -10988,13 +10992,13 @@ form.user .btn-user {
 }
 
 footer.sticky-footer {
-  padding: 2rem 0;
+  padding: 1.2rem 0;
   flex-shrink: 0;
 }
 
 footer.sticky-footer .copyright {
   line-height: 1;
-  font-size: 0.8rem;
+  font-size: 1rem;
 }
 
 body.sidebar-toggled footer.sticky-footer {

@@ -1,7 +1,16 @@
-﻿body {
-    padding-top: 50px;
-    padding-bottom: 20px;
+﻿
+/*Custom CSS*/
+.nav-color {
+    background-color: rgb(21, 130, 180) !important;
 }
+
+.sidebar-color {
+    background-color: rgb(21, 130, 180) !important;
+    background-image: linear-gradient(180deg, rgb(21, 130, 180) 10%, #2249bd 100%) !important;
+    background-size: cover !important;
+}
+/*Custom CSS*/
+
 
 /* Set padding to keep content from hitting the edges */
 .body-content {
@@ -76,5 +85,3 @@ a:focus {
     border-bottom: 1px dashed #ddd;
     margin: 40px 0;
 }
-
-

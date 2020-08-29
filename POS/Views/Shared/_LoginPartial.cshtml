@@ -1,4 +1,5 @@
 ﻿@using Microsoft.AspNet.Identity
+
 @if (Request.IsAuthenticated)
 {
     using (Html.BeginForm("LogOff", "Account", new { area = "" },FormMethod.Post, new { id = "logoutForm" }))
@@ -7,7 +8,7 @@
         
         <li class="nav-item dropdown no-arrow userIdentity maga">
             <a href="#" class="" id="userDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                <span class="mr-2 d-none d-lg-inline text-gray-600 small"> @User.Identity.GetUserName()</span>
+                <span class="mr-2 d-none d-lg-inline text-light small"> @User.Identity.GetUserName()</span>
                 <img class="img-profile rounded-circle userDropdown" src="https://source.unsplash.com/QAB-WJcbgJk/30x30">
             </a>
             <!-- Dropdown - User Information -->

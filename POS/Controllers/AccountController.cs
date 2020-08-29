@@ -59,6 +59,16 @@ namespace POS.Controllers
         [AllowAnonymous]
         public ActionResult Login(string returnUrl)
         {
+            // in future redirect with role wise
+
+            var result = TempData["Result"];
+            switch (result)
+            {
+                case SignInStatus.Success:
+                    return RedirectToAction("Index", "Home", "");
+              
+            }
+
             ViewBag.ReturnUrl = returnUrl;
             return View();
         }
